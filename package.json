@@ -1,0 +1,63 @@
+{
+  "name": "hrach-gulp-pug",
+  "version": "1.0.0",
+  "description": "gulp assembly = 'webpack, eslint, pug, scss'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./dist --ext .js",
+    "build": "gulp build --env=production",
+    "bem-c": "bem create $* -l #app/components",
+    "bem-m": "bem create $* -l #app/modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hrach-m/gulp-assembly-pug"
+  },
+  "author": "Martin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrach-m/gulp-assembly-pug/issues"
+  },
+  "homepage": "https://github.com/hrach-m/gulp-assembly-pug#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/eslint-parser": "^7.16.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/register": "^7.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "@typescript-eslint/parser": "^5.3.1",
+    "babel-loader": "^8.0.5",
+    "bem-tools-core": "github:bem-tools/bem-tools-core",
+    "bem-tools-create": "github:bem-tools/bem-tools-create",
+    "browser-sync": "^2.27.5",
+    "del": "^6.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-babel": "^0.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.27.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-webpack-plugin": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cache": "^1.1.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-ttf2woff": "^1.1.1",
+    "gulp-ttf2woff2": "^4.0.1",
+    "jquery": "^3.6.0",
+    "minimist": "^1.2.5",
+    "prettier": "2.4.1",
+    "sass": "^1.43.3",
+    "stylelint": "^14.0.1",
+    "stylelint-config-standard": "^23.0.0",
+    "stylelint-config-standard-scss": "^2.0.1",
+    "webpack": "^5.61.0",
+    "webpack-stream": "^7.0.0"
+  }
+}

@@ -1,0 +1,8 @@
+# Here we add all files which don't want for checking Eslint
+/.eslintignore
+# /node_modules/* and /bower_components/* in the project root are ignored by default
+/node_modules/*
+/bower_components/
+gulpfile.js
+# /app/*
+# Ignore built files except !build/index.js
