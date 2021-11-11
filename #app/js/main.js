@@ -4,6 +4,5 @@ $(()=> {
   // $('.pcolor').css('background', 'limegreen')
 });
 
-console.log('Tujhg')
 
 
