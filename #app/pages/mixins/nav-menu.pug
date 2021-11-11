@@ -1,0 +1,18 @@
+mixin menu
+  ul
+    li
+      //- include ../data/layout
+      each page in pages
+        //- set all text to lower case
+        - const txtToLowerCase = page.toLowerCase();
+        //- replace spaces between words to  dash '-'
+        - const spaceToDash = txtToLowerCase.split(' ').join('-');
+
+        if spaceToDash === 'home'
+
+          //- replace home to index for path 
+          - const homeToIndex = txtToLowerCase.replace('home', 'index');
+          a(href= `${homeToIndex}.html`)= page
+
+        else
+          a(href= `${spaceToDash}.html`)= page
